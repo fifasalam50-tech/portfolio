@@ -5,6 +5,15 @@ body {
   padding: 40px;
 }
 
+body {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+
 .card {
   background: white;
   max-height: 500%;
@@ -124,6 +133,7 @@ button:hover {
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 15px;
   margin-top: 15px;
+  margin-bottom: 25px;
 }
 
 .skill {
@@ -190,4 +200,65 @@ button:hover {
   from {
     width: 100%;
   }
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 16px;
+  background-color: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.back-btn:hover {
+  background-color: #1e40af;
+  transform: translateY(-2px);
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax (220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.projects {
+  background: #f8fafc;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.projects:hover {
+  transform: translateY(-5px);
+}
+
+.projects a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.projects {
+  margin-bottom: 20px;
+}
+
+#dreamBtn {
+  margin-top: 15px;
+}
+
+.skill {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
